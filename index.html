@@ -2,6 +2,25 @@
   <html>
     <head>
         <title>aaa</title>
+      <style>
+        .button06 {
+  display: inline-block;
+  background-color: #fff;
+  border: solid 2px #00bfff;
+  color: #00bfff;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 1em;
+  text-decoration: none;
+}
+.button06:hover {
+  background-color: #e0ffff;
+  color: #00bfff;
+}
+      </style>
     </head>
     <body>
         <div class="chatlist"></div>
@@ -9,7 +28,7 @@
             <div class="chatcode">
             <input type="text" name="text" placeholder="Text" onkeydown="if(event.keyCode==13){sendData(); return false;}">
                 <input type="text" name="name" placeholder="Name">
-                <button onclick="sendData()">Send</button>
+                <button class="button06" onclick="sendData()">Send</button>
             </div>
         </div>
     <script>
